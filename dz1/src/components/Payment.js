@@ -11,8 +11,8 @@ class Payment extends Component{
 
         let sum1 = parseFloat(sum.value);
         let months1 = parseInt(months.value);
-        monthpaymentsum.value=sum1/months1*(0,25/12);
-        monthpaymentpercent.value=(sum1*25/100)*months1;
+        monthpaymentsum.value=(sum1/months1)+((sum1*0.25)/months1);
+        monthpaymentpercent.value=(sum1*0.25)/months1;
     }
     render(){
         return (
