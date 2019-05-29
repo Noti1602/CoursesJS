@@ -6,7 +6,7 @@ import Show from './components/Show'
 
     function App() {
         return (
-            <div className="App">
+            <div className="App">                  Креще було зробити ще один компонент і передати у нього масив
                 <Show  name="Кефір" price={25}  date={10} rate={1}/>
                 <hr/>
                 <Show  name="Молоко" price={23}  date={10} rate={2}/>
