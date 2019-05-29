@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Show extends Component{
+class Show extends Component{ Це презентаційни компонент. Краще було використати функцію замість класу
     constructor(props){
         super(props);
     }
@@ -9,10 +9,10 @@ class Show extends Component{
         return ( <div>
             <h1 style={{ textAlign: "left"}}> Інформація про товар </h1>
             <ul>
-                <li style={{ textAlign: "left"}}>Назва товару: {this.props.name}</li>
-                <li style={{ textAlign: "left"}}>Вартість товару: {this.props.price}</li>
-                <li style={{ textAlign: "left"}}>Термін придатності: {this.props.date}</li>
-                <li style={{ textAlign: "left"}}>Рейтинг: {this.props.rate}</li>
+                <li style={{ textAlign: "left"}}>Назва товару: {name}</li> Ви виконали деструктуризацію, то навіщо вказувати this.props.
+                <li style={{ textAlign: "left"}}>Вартість товару: {price}</li>
+                <li style={{ textAlign: "left"}}>Термін придатності: {date}</li>
+                <li style={{ textAlign: "left"}}>Рейтинг: {rate}</li>
             </ul>
            </div>);
     }
